@@ -10,6 +10,7 @@ function submitcomment(event, elem) {
         .done(function (data) {
             if (data.trim() == 'success') {
                 alert("Commentaire ajoute avec succes");
+                $("#" + elem)[0].reset() ;
             }
         })
 }
